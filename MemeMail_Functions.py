@@ -68,17 +68,18 @@ def MakeAndSendMemeMail():
     msg['Subject'] = subject
     msg.attach(MIMEText(message, 'plain'))
 
-
-    #this part converts the image into something that can be sent in an email (I think)
     attachment = open(meme, "rb")
-    #attachment = open('memes/meme-2307.jpg', "rb")
-
+    
+    
+    #this part converts the image into base64 so it can be sent with the email
+    #This bit of code is an algamation of code from online, it is not entirely credited towards me.
     part = MIMEBase('application', 'octet-stream')
     part.set_payload((attachment).read())
     encoders.encode_base64(part)
     part.add_header('Content-Disposition', "attachment; filename= %s" % meme)
     msg.attach(part)
 
+    
 
     print('Email Fully Built\n')
     print('Email is being sent to ', send_to_email, ' ')
