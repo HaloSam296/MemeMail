@@ -72,7 +72,7 @@ def MakeAndSendMemeMail():
     
     
     #this part converts the image into base64 so it can be sent with the email
-    #This bit of code is an algamation of code from online, it is not entirely credited towards me.
+    #This bit of code is an amalgamation of code from online, it is not entirely credited towards me.
     part = MIMEBase('application', 'octet-stream')
     part.set_payload((attachment).read())
     encoders.encode_base64(part)
