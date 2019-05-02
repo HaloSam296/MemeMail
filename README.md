@@ -11,5 +11,5 @@ Setup:
 Most of the functions used should be built into Python, but you have to install quantumrandom (pip install quantumrandom)
 and you might need to install smtplib (pip install stmplib)
 
-For the email (it is recommended to create a new account for this), I use an account from Google. If you also use one, first make the email or login to an existing one that you plan to use for this script, go to https://myaccount.google.com/security (or the security tab for your account), find "Less Secure App Access" and set that to on. Just a warning, I haven't purposely put any secuity flaws in this program, but I also haven't made many efforts to keep this very secure, be careful with who you send the emails to if you use a personal account.
+For the email (it is recommended to create a new account for this), I use an account from Google. If you also use one, first make the email or login to an existing one that you plan to use for this script, go to https://myaccount.google.com/security (or the security tab for your account), find "Less Secure App Access" and set that to on. Just a warning, I haven't purposely put any secuity flaws in this program, but I also haven't yet tried to make this program as secure as possible. Be careful with what email you use and with whom you send a MemeMail for.
                                                          
